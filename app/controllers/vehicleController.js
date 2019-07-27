@@ -58,9 +58,10 @@ exports.findDistance = (req, res) => {
         Math.sin(dLong / 2) * Math.sin(dLong / 2);
 
     let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    let d = R * c; // Distance in km
+    let d = Math.round(R * c); // Distance in km
+    let distance = { distance: d };
     
-    let apiResponse = response.generate(false, "Distance calculated", 200, d);
+    let apiResponse = response.generate(false, "Distance calculated", 200, distance);
     res.status(apiResponse.status).send(apiResponse);
     
 }

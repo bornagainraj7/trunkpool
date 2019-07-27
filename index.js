@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const errorController = require('./controllers/errorController');
-const vehicleRoutes = require('./routes/vehicle');
+const errorController = require('./app/controllers/errorController');
+const vehicleRoutes = require('./app/routes/vehicle');
 const fetchData = require('./app/libs/fetchLib');
 
 const MONGODB_URI = "mongodb://127.0.0.1:27017/TrunkpoolDB";

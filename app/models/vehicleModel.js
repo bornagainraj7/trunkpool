@@ -8,7 +8,7 @@ let VehicleModel = new Schema({
         required: true
     },
     imei: {
-        type: String,
+        type: Number,
         required: true
     },
     location: {
