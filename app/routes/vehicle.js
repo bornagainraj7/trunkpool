@@ -78,13 +78,13 @@ router.get('/vehicle/:id', vehicleController.getVehicleById);
 
 router.get('/distance', vehicleController.findDistance);
     /**
-     * @api {get} /api/distance Get all vehicle details
+     * @api {get} /api/distance Get the distance between 2 locations
      * @apiVersion 1.0.0
      * @apiGroup Calculate
-     * @apiParam {Number} lat1 1st lattitude as parameter
-     * @apiParam {Number} long1 1st Longitude as parameter
-     * @apiParam {Number} lat2 2nd lattitude as parameter
-     * @apiParam {Number} long2 2nd Longitude as parameter
+     * @apiParam {Number} lat1 1st lattitude as query parameter
+     * @apiParam {Number} long1 1st Longitude as query parameter
+     * @apiParam {Number} lat2 2nd lattitude as query parameter
+     * @apiParam {Number} long2 2nd Longitude as query parameter
      *
      *  @apiSuccessExample {json} Success-Response:
      *  {
